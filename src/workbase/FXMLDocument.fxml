@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="600.0" style="-fx-background-color: #DCF1F1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workbase.FXMLDocumentController">
+   <children>
+      <Pane prefHeight="460.0" prefWidth="189.0" style="-fx-background-color: #BED1D1;">
+         <children>
+            <Button layoutX="1.0" layoutY="80.0" mnemonicParsing="false" onAction="#btnSearchClicked" prefHeight="64.0" prefWidth="189.0" style="-fx-background-color: #CAEDED;" text="Підібрати вакансію">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="166.0" mnemonicParsing="false" onAction="#btnCreateClicked" prefHeight="64.0" prefWidth="189.0" style="-fx-background-color: #CAEDED;" text="Створити вакансію">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutY="249.0" mnemonicParsing="false" onAction="#btnShowAllClicked" prefHeight="64.0" prefWidth="189.0" style="-fx-background-color: #CAEDED;" text="Перегляд всіх вакансій">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="1.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnExitClicked" prefHeight="64.0" prefWidth="189.0" style="-fx-background-color: #CAEDED;" text="Вихід з програми">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Button>
+            <MenuBar layoutY="-3.0" prefHeight="32.0" prefWidth="600.0" style="-fx-background-color: #BED1CC; -fx-border-color: #A9BAB6;">
+              <menus>
+                <Menu mnemonicParsing="false" style="-fx-border-color: #A9BAB6;" text="Додатково">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#menuDelAction" text="Видалення вакансії" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuClose" text="Вихід з програми" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" style="-fx-border-color: #A9BAB6;" text="Інформація">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#menuAboutDev" text="Про розробника" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuAboutProg" text="Про програму" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" style="-fx-border-color: #A9BAB6;" text="Допомога">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#menuWorkAction" text="Робота з програмою" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+      <ImageView fitHeight="215.0" fitWidth="308.0" layoutX="240.0" layoutY="107.0" pickOnBounds="true">
+         <image>
+            <Image url="@../pictures/main.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="223.0" layoutY="362.0" text="Вітаємо вас у программі перегляду вакансій&#10;Для ознайомлення або підбору вакансій скористайтесь меню" textAlignment="CENTER" />
+      <Label layoutX="343.0" layoutY="37.0" text="Work Base">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

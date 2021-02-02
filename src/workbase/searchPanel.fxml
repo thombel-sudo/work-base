@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="416.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workbase.SearchPanelController">
+   <children>
+      <Pane prefHeight="474.0" prefWidth="203.0" style="-fx-background-color: #BED1D1;">
+         <children>
+            <ComboBox fx:id="cbArea" layoutX="10.0" layoutY="78.0" onAction="#cbAreaChanged" prefHeight="25.0" prefWidth="184.0" promptText="Оберіть сферу діяльності" />
+            <ComboBox fx:id="cbEdu" layoutX="10.0" layoutY="147.0" onAction="#cbEduChanged" prefHeight="25.0" prefWidth="184.0" promptText="Освіта" />
+            <ComboBox fx:id="cbExp" layoutX="10.0" layoutY="221.0" onAction="#cbExpChanged" prefHeight="25.0" prefWidth="184.0" promptText="Досвід роботи" />
+            <Button fx:id="btnSearch" disable="true" layoutX="53.0" layoutY="302.0" mnemonicParsing="false" onAction="#btnSearchClicked" prefHeight="33.0" prefWidth="97.0" text="Пошук" />
+         </children>
+      </Pane>
+      <TableView fx:id="tableJobs" layoutX="203.0" prefHeight="474.0" prefWidth="678.0" style="-fx-background-color: #CAEDED;">
+         <columns>
+            <TableColumn fx:id="jobName" prefWidth="184.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Назва вакансії" />
+            <TableColumn fx:id="areaName" prefWidth="125.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Сфера діяльності" />
+            <TableColumn fx:id="eduName" prefWidth="124.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Освіта" />
+            <TableColumn fx:id="expName" prefWidth="114.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Досвід роботи" />
+            <TableColumn fx:id="numberName" prefWidth="130.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Номер для звязку" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

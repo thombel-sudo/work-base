@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workbase.ShowAllPanelController">
+   <children>
+      <TableView fx:id="tableJobs" prefHeight="452.0" prefWidth="771.0" style="-fx-background-color: #CAEDED;">
+         <columns>
+            <TableColumn fx:id="jobName" prefWidth="184.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 14px Verdana;" text="Назва вакансії" />
+            <TableColumn fx:id="areaName" prefWidth="135.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 14px Verdana;" text="Сфера діяльності" />
+            <TableColumn fx:id="eduName" prefWidth="164.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 14px Verdana;" text="Освіта" />
+            <TableColumn fx:id="expName" prefWidth="121.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 14px Verdana;" text="Досвід роботи" />
+            <TableColumn fx:id="numberName" prefWidth="166.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 14px Verdana;" text="Номер для звязку" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

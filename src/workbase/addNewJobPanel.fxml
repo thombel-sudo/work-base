@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="409.0" style="-fx-background-color: #BED1D1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workbase.AddNewJobPanelController">
+   <children>
+      <Label layoutX="151.0" layoutY="43.0" text="Додавання вакансії" />
+      <TextField fx:id="tbName" layoutX="95.0" layoutY="84.0" prefHeight="25.0" prefWidth="220.0" promptText="Введіть назву" />
+      <ComboBox fx:id="cbArea" layoutX="95.0" layoutY="127.0" prefHeight="25.0" prefWidth="220.0" promptText="Оберіть сферу діяльності" />
+      <ComboBox fx:id="cbEdu" layoutX="95.0" layoutY="172.0" prefHeight="25.0" prefWidth="220.0" promptText="Оберіть рівень освіти" />
+      <ComboBox fx:id="cbExp" layoutX="95.0" layoutY="214.0" prefHeight="25.0" prefWidth="220.0" promptText="Оберіть досвід роботи" />
+      <TextField fx:id="tbNumber" layoutX="95.0" layoutY="257.0" prefHeight="25.0" prefWidth="220.0" promptText="Контактний номер" />
+      <Button fx:id="btnAdd" layoutX="145.0" layoutY="335.0" mnemonicParsing="false" onAction="#btnAddClicked" prefHeight="25.0" prefWidth="120.0" text="Додати" />
+   </children>
+</AnchorPane>

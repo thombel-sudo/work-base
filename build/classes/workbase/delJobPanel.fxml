@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="585.0" style="-fx-background-color: #DCF1F1;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="workbase.DelJobPanelController">
+   <children>
+      <TableView fx:id="tableJobs" layoutY="96.0" prefHeight="363.0" prefWidth="585.0" style="-fx-background-color: #CAEDED;">
+         <columns>
+            <TableColumn fx:id="idName" prefWidth="184.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="ID" />
+            <TableColumn fx:id="jobName" prefWidth="184.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Назва вакансії" />
+            <TableColumn fx:id="areaName" prefWidth="125.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Сфера діяльності" />
+            <TableColumn fx:id="eduName" prefWidth="124.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Освіта" />
+            <TableColumn fx:id="expName" prefWidth="114.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Досвід роботи" />
+            <TableColumn fx:id="numberName" prefWidth="130.0" style="-fx-background-color: #8ED1D1; -fx-text-fill: #FFFFFF; -fx-border-color: #505050; -fx-border-width: 0.3; -fx-font: 13px Verdana;" text="Номер для звязку" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="lblDelete" layoutX="35.0" layoutY="36.0" prefHeight="25.0" prefWidth="169.0" promptText="Введіть ID для видалення" />
+      <Button layoutX="230.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnDeleteClick" prefHeight="25.0" prefWidth="82.0" text="Видалити" />
+   </children>
+</AnchorPane>
